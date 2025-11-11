@@ -1,0 +1,19 @@
+# STM32CubeIDE build files (for all subprojects)
+*.launch
+*.settings/
+Debug/
+Release/
+*.o
+*.elf
+*.bin
+*.hex
+
+# Eclipse metadata
+.metadata/
+*.tmp
+*.bak
+*.swp
+
+# OS-specific
+.DS_Store
+Thumbs.db
