@@ -1,17 +1,24 @@
-<img width="1024" height="1024" alt="Gemini_Generated_Image_e2syope2syope2sy" src="https://github.com/user-attachments/assets/82dd2dcc-5cb0-4e6a-9a8c-951ae75c4fc1" />
 # 🌾 SmartAgro - Système de Surveillance Agricole Intelligent
 
 ## 📋 Description
 
-**SmartAgro** est un système embarqué de surveillance et d'automatisation agricole intelligente basé sur deux cartes **STM32H7**. Le système collecte des données environnementales en temps réel, détecte les maladies des plantes grâce à l'intelligence artificielle embarquée, et contrôle automatiquement l'irrigation, la ventilation et l'éclairage pour optimiser les conditions de croissance.
+**SmartAgro** est un système embarqué de surveillance et d'automatisation agricole intelligente basé sur deux cartes **STM32H7A3ZI** et **STM32F407VG**. Le système collecte des données environnementales en temps réel, détecte les maladies des plantes grâce à l'intelligence artificielle embarquée, et contrôle automatiquement l'irrigation, la ventilation et l'éclairage pour optimiser les conditions de croissance.
 
 Les données sont transmises au cloud **Adafruit IO** via MQTT sécurisé (TLS) grâce à un module **ESP32** pour une supervision à distance en temps réel.
 
 > 🎯 **Objectif** : Automatiser la gestion agricole pour maximiser les rendements tout en réduisant la consommation d'eau et d'énergie.
 
+---
+
 ## 🎥 Vidéo de démonstration
 
 [![Voir la démo sur Google Drive](https://drive.google.com/uc?export=view&id=1bJFTI6KcqEKpHZDCCuNOP9v2ajTUpQTe)](https://drive.google.com/file/d/1bJFTI6KcqEKpHZDCCuNOP9v2ajTUpQTe/view?usp=sharing)
+
+---
+
+## 🔧 Architecture Système
+
+<img width="1024" height="555" alt="Gemini_Generated_Image_e2syope2syope2sy" src="https://github.com/user-attachments/assets/749d62fa-ac69-4814-ab82-acf49588d355" />
 
 
 ## ✨ Fonctionnalités Principales
@@ -24,7 +31,6 @@ Les données sont transmises au cloud **Adafruit IO** via MQTT sécurisé (TLS) 
 ### 🤖 Intelligence Artificielle
 - Détection des maladies des plantes (pomme de terre, tomate, poivron)
 - Analyse embarquée en temps réel
-- Alertes préventives
 
 ### ⚙️ Automatisation
 - **Irrigation automatique** : Pompe contrôlée selon l'humidité du sol
@@ -38,11 +44,6 @@ Les données sont transmises au cloud **Adafruit IO** via MQTT sécurisé (TLS) 
 
 ---
 
-## 🔧 Architecture Système
-```
-<img width="1024" height="1024" alt="Gemini_Generated_Image_e2syope2syope2sy" src="https://github.com/user-attachments/assets/2ae45d90-0f7f-4d93-baf4-e367d0248a5d" />
-
-```
 ## ⚙️ Protocoles de communication utilisés
 
 | Protocole | Vitesse     | Usage                        |
@@ -55,20 +56,38 @@ Les données sont transmises au cloud **Adafruit IO** via MQTT sécurisé (TLS) 
 
 ---
 
+## 📊 Tableau de bord Adafruit IO
+L’utilisation d’**Adafruit IO** dans le projet **SmartAgro** offre :
+1. **📊 Visualisation en temps réel**  
+   Permet de suivre instantanément les données issues des capteurs (température, humidité, luminosité, etc.) à travers des graphiques, jauges et widgets interactifs.
+
+2. **☁️ Stockage Cloud sécurisé**  
+   Les données sont enregistrées sur le cloud, accessibles depuis n’importe où, sans avoir besoin d’un serveur local.
+
+3. **🔗 Communication simple via MQTT**  
+   Compatible avec le protocole MQTT, ce qui facilite la connexion entre le module ESP32 et la plateforme Adafruit IO de manière fiable et rapide.
+
+
+
+> Les données sont publiées par l’ESP32 via MQTT et affichées sous forme de graphiques, jauges et indicateurs interactifs.
+
+🖥️ Exemple de l'interface :
+
+<img width="1813" height="797" alt="adafruit" src="https://github.com/user-attachments/assets/019f27b2-2fed-4201-a13f-90728ccf52e9" />
+
+---
 
 ## 👥 Auteurs
 
-**Votre Nom** - *chaima ghouili*
+**Chaima Ghouili**
 
 ---
 
 ## 📞 Contact
 
-- Email : chaimaghouili691@gmail.com
-- LinkedIn : [Votre Profil](https://www.linkedin.com/in/chaima-ghouili-98b54527a/)
-
+- ✉️ Email : [chaimaghouili691@gmail.com](mailto:chaimaghouili691@gmail.com)
+- 💼 LinkedIn : [Chaima Ghouili](https://www.linkedin.com/in/chaima-ghouili-98b54527a/)
 
 ---
 
 ⭐ **Si ce projet vous est utile, n'hésitez pas à lui donner une étoile !**
-```
